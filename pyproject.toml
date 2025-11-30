@@ -1,0 +1,22 @@
+[project]
+name = "dockerized-databricks-etl"
+version = "0.1.0"
+description = "dockerized-databricks-etl"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "asyncio>=4.0.0",
+    "httpx>=0.28.1",
+    "httpx-retries",
+    "httpx-retry>=2025.4.23",
+    "logging>=0.4.9.6",
+    "pydantic>=2.12.5",
+    "pydantic-settings>=2.12.0",
+    "python-dotenv>=0.21.0",
+    "typing>=3.10.0.0",
+    "polars>=1.0.0",
+    "azure-storage-blob>=12.0.0",
+    "azure-identity>=1.0.0",
+    "azure-storage-blob>=12.0.0",
+    "azure-identity>=1.0.0",
+]

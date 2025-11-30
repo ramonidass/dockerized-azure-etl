@@ -1,0 +1,27 @@
+executor: KubernetesExecutor
+
+webserver:
+  service:
+    type: LoadBalancer
+
+scheduler:
+  replicas: 1
+
+worker:
+  replicas: 1
+
+dags:
+  persistence:
+    enabled: true
+    size: 10Gi
+
+logs:
+  persistence:
+    enabled: true
+    size: 10Gi
+
+env:
+  - name: AIRFLOW__CORE__EXECUTOR
+    value: KubernetesExecutor
+  - name: AIRFLOW__KUBERNETES__NAMESPACE
+    value: default
